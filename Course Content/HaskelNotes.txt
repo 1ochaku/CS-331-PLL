@@ -1,0 +1,27 @@
+>> To compile a haskel file and execute
+ghc -o sqRoot sqRoot.hs 
+NOTE: it's important to write main = {...} 
+In this one, we have the function defined and we call the function inside the haskell file only!
+
+>> Else we can just simply define the function and load it
+:load fileName
+call the function with input
+
+>> We can define it in terminal also!
+Using let command
+But now not necessary
+
+>> MultiLine comment
+{- This 
+comment {- is a 
+{-multiline-}-}-} 
+NOTE: we shouldn't keep any space in the starting
+
+>> For quitting
+:quit
+
+>> For rounding the value
+decimal x = (fromIntegral ((round(x*100000))/100000) )
+
+>> Indexing of list
+numbers!!0 (we don't use [])

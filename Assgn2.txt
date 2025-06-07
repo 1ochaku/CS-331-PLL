@@ -1,0 +1,23 @@
+1. Request from users will come and I have to process.
+2. There are diff branch present so parallel processing can happen.
+3. Request need to be generated periodically for each of these branches.
+4. Is there any constraint on the total number of requests?
+5. Can one user ask for multiple request?
+6. Do we have to keep checks on if account has zero amt no deduction etc?
+7. What is the probability given for? Generating the requests?
+
+Steps taken:
+1. Class for one branch: containing 10 updaters, linked list, operation allowed
+2. Call it 10 times for 10 branches
+3. Run all 10 branches in parallel
+4. While running, in each branch, make all 10 updaters to work in parallel: so should we divide the linked list for 10 updaters?
+5. While updating, since each updaters has got 1e5 users at max, there can happen that one user has multiple request to different updaters in that case we need to ensure lock.
+6. Operations allowed: 
+>> Balance check (after depositing, transfer or withdrawal only)
+>> Add customer
+>> Delete a customer
+>> Transfering account
+7. Generate requests for each branch
+
+
+1. cross branch not done yet

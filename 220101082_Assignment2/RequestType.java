@@ -1,0 +1,9 @@
+public enum RequestType {
+    BALANCE_CHECK,
+    DEPOSIT,
+    WITHDRAWAL,
+    MONEY_TRANSFER,
+    ADD_CUSTOMER,
+    DELETE_CUSTOMER,
+    TRANSFER_ACCOUNT
+}
